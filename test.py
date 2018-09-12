@@ -5,8 +5,8 @@ To = 'BXOM9LUNLPSEXBRJV9UUNLHSUHABEOGHQOGNBNBUEYSGOFZOEPYKEYRSFTXBOEJLUODUQXXGQ9
 
 
 a = IOTATransaction.IOTATransaction(From)
-#pt = a.MakePreparingTransaction(To,'Hello, I am Kevin.')
-#a.SendTransaction([pt])
-#print(a.GetTransactionHash())
+pt = a.MakePreparingTransaction(To,'Hello again, I am Kevin From NCKU.')
+a.SendTransaction([pt])
+print(a.GetTransactionHash())
 
-print(a.GetTransactionMessage('AYKWRKTOC9SPPWHNWJPWXC9QTB9BCYUMH9FJLIIPKXAWMKFQFBNDPFKYIOHXRJQGUALNGUUIGPPR99999'))
+#print(a.GetTransactionMessage('WGRXJ9USIJ9MXFTGBYTRHH9BPKBAAP9ZJIKHYRRFVSWFXCJHCIKVCZMBQ9QRGFRZRTIMRIZUWNGYZ9999'))

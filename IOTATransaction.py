@@ -6,8 +6,9 @@ class IOTATransaction:
         self.MySeed = str.encode(_MySeed)
         self.FinalBundle = "INIT"
         self.TransactionHashList = list()
-        self.api = iota.Iota("https://field.deviota.com:443")
-    def MakePreparingTransaction(self, TargetAddress, StringMessage, tag='HRIBEK999IOTA999TUTORIAL'):
+        #self.api = iota.Iota("https://field.deviota.com:443")
+        self.api = iota.Iota("http://140.116.247.117:14265")
+    def MakePreparingTransaction(self, TargetAddress, StringMessage, tag='KEVIN999IS999HANDSOME'):
         TargetAddress = str.encode(TargetAddress)
         pt = iota.ProposedTransaction(address = iota.Address(TargetAddress),message = iota.TryteString.from_unicode(StringMessage),tag = iota.Tag(str.encode(tag)),value=0)
         return pt
